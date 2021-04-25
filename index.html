@@ -16,64 +16,129 @@
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
 
-  <div class="d-flex" id="wrapper">
+  <div class="d-flex bg-super-dark" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+    <div class="bg-dark" id="sidebar-wrapper">
+      <div class="profile-header-img d-flex justify-content-center">
+        <img class="img-circle rounded-circle" src="images/profile.jpg"/>
       </div>
+      <div class="sidebar-heading text-light d-flex justify-content-center">
+        <p class = "name text-center">Muhammad Dafa Athaullah</p>
+      </div>
+      <div class="list-group mt-5">
+        <a href="#" class="list-group-item list-group-item-action active bg-dark text-light text-center h4">Home</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-light text-center h4">About Me</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-light text-center h4">Resume</a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-light text-center h4">Project</a>
+      </div>
+
+
+      <div class="mt-5 d-flex justify-content-center">
+        <div>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+       <footer id="sticky-footer" class="py-4 bg-dark text-white mt-5">
+        <div class="container text-center">
+          <p>Copyright &copy 2021</p>
+        </div>
+      </footer>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+    <div id="page-content-wrapper" class="container-fluid ml-4 bg-dark text-white p-5">
+      <div class="row ml-4">
+        <h1 class="mb-4 mt-4">About Me</h1>
+      </div>
+      <div  class="row m-2">
+        <div class="col">
+          <h2 class="p-1 mt-2">Description</h2>
+          <ul class="list-group text-white p-1">
+            <ul class="list-group list-group-horizontal-sm mt-2">
+              <li class="list-group-item p-0 bg-transparent h5 border-0 font-weight-bold" style="width: 30%;">About Me</li>
+              <li class="list-group-item p-0 ml-3 pt-1 bg-transparent h6 border-0" style="width: 70%;">Seorang pelajar di IPB University</li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm mt-2">
+              <li class="list-group-item p-0 bg-transparent h5 border-0 font-weight-bold" style="width: 30%;">Age</li>
+              <li class="list-group-item p-0 ml-3 pt-1 bg-transparent h6 border-0" style="width: 70%;">19</li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm mt-2">
+              <li class="list-group-item p-0 bg-transparent h5 border-0 font-weight-bold" style="width: 30%;">Address</li>
+              <li class="list-group-item p-0 ml-3 pt-1 bg-transparent h6 border-0" style="width: 70%;">Purwokerto, Central Java</li>
+            </ul>
           </ul>
         </div>
-      </nav>
-
-      <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+        <div class="col">
+          <h2 class="p-1 mt-2">Contact</h2>
+          <ul class="list-group text-white p-1">
+            <ul class="list-group list-group-horizontal-sm mt-2">
+              <li class="list-group-item p-0 bg-transparent h5 border-0 font-weight-bold" style="width: 30%;">Email</li>
+              <li class="list-group-item p-0 ml-3 pt-1 bg-transparent h6 border-0" style="width: 70%;">dafaathaullah123@gmail.com</li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm mt-2">
+              <li class="list-group-item p-0 bg-transparent h5 border-0 font-weight-bold" style="width: 30%;">Phone</li>
+              <li class="list-group-item p-0 ml-3 pt-1 bg-transparent h6 border-0" style="width: 70%;">+6281390494775</li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm mt-2">
+              <li class="list-group-item p-0 bg-transparent h5 border-0 font-weight-bold" style="width: 30%;">Whatsapp</li>
+              <li class="list-group-item p-0 ml-3 pt-1 bg-transparent h6 border-0" style="width: 70%;">+6281390494775</li>
+            </ul>
+          </ul>
+        </div>
       </div>
+      <div class="row ml-4 mt-5">
+        <h2>Summary</h2>
+      </div>
+      <div class="row ml-3 mt-10 justify-content-lg-center">
+          <div class="col">
+            <div class="card bg-gray text-center">
+              <div class="card-body">
+                <span class="iconify" data-icon="carbon:task" data-inline="false"></span>
+                <h4 class="mt-3">Projects Done</h4>
+                <h2 class="mt-2" style="color: #41E2D9;">0</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-gray text-center">
+              <div class="card-body">
+                <span class="iconify" data-icon="bi:emoji-smile" data-inline="false"></span>
+                <h4 class="mt-3">Points Earned</h4>
+                <h2 class="mt-2" style="color: #41E2D9;">0</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-gray text-center">
+              <div class="card-body">
+                <span class="iconify" data-icon="akar-icons:star" data-inline="false"></span>
+                <h4 class="mt-3">Skills</h4>
+                <h2 class="mt-2" style="color: #41E2D9;">0</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-gray text-center">
+              <div class="card-body">
+                <span class="iconify" data-icon="feather:thumbs-up" data-inline="false"></span>
+                <h4 class="mt-3">Experience</h4>
+                <h2 class="mt-2" style="color: #41E2D9;">0</h2>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <!-- /#page-content-wrapper -->
 

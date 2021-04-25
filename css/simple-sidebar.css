@@ -3,10 +3,82 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
+/* Style all font awesome icons */
+.fa {
+  background: #545454;
+  color: white;
+  padding: 12px 12px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+.bg-super-dark{
+  background-color: #232323;
+}
 
- #wrapper {
+.bg-gray{
+  background-color: #545454;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.footer{
+  color: white;
+}
+
+.profile-header-img {
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-right: 14px;
+}
+.name {
+  font-size: xx-large;
+  width: 12rem;
+}
+
+ img.img-circle {
+  width: 140px;
+  height: 140px;
+}
+.profile-header {
+  margin-top: 43px;
+}
+
+.sidebar-heading.text {
+  font-size: xx-large;
+}
+
+.pt-3{
+  margin-top: 50px;
+}
+
+.active{
+  background-color: aliceblue;
+}
+.mt-10{
+  margin-top: 3rem;
+}
+
+.card{
+  padding: 10px;
+  height: 15rem;
+  width: 15rem;
+}
+
+.iconify{
+  height: 100px;
+  width: 100px;
+  color: #9E9E9E;
+}
+
+#wrapper {
     overflow-x: hidden;
  }
+
+
 
 #sidebar-wrapper {
   min-height: 100vh;
@@ -23,7 +95,8 @@
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+  border: 0;
+  width: 100%;
 }
 
 #page-content-wrapper {
